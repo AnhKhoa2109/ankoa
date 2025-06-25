@@ -29,7 +29,7 @@ noButton.addEventListener("click", function () {
 function handleYesClick() {
   titleElement.innerHTML = "tui thuong bée, tui hong làm bé bùn nua đâuuu";
   buttonsContainer.classList.add("hidden");
-  changeImage("yes");
+  changeImage("sup");
 }
 
 function resizeYesButton() {
@@ -55,11 +55,12 @@ function generateMessage(noCount) {
 }
 
 function changeImage(image) {
-  catImg.src = `img/cat-${image}.jpg`;
-  if (type === "yes") {
-    image.src = "img/cat-yes.png";  // đường dẫn đến ảnh bạn đã thêm
+  if (type === "sup") {
+    image.src = "img/cat-sup.png";  // đường dẫn đến ảnh bạn đã thêm
     image.style.display = "block";
+    return;
   }
+  catImg.src = `img/cat-${image}.jpg`;
 }
 
 function updateNoButtonText() {
