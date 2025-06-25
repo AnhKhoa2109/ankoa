@@ -54,13 +54,13 @@ function generateMessage(noCount) {
   return messages[messageIndex];
 }
 
-function changeImage(image) {
+function changeImage(type) {
   if (type === "sup") {
     image.src = "img/cat-sup.png";  // đường dẫn đến ảnh bạn đã thêm
     image.style.display = "block";
     return;
   }
-  catImg.src = `img/cat-${image}.jpg`;
+  catImg.src = `img/cat-${type}.jpg`;
 }
 
 function updateNoButtonText() {
