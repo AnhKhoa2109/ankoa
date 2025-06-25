@@ -56,6 +56,10 @@ function generateMessage(noCount) {
 
 function changeImage(image) {
   catImg.src = `img/cat-${image}.jpg`;
+  if (type === "yes") {
+    image.src = "img/cat-yes.png";  // đường dẫn đến ảnh bạn đã thêm
+    image.style.display = "block";
+  }
 }
 
 function updateNoButtonText() {
